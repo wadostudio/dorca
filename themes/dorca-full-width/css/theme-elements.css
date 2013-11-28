@@ -1,0 +1,95 @@
+/* Social Icons */
+ul.social-icons {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	display: inline-block;
+	font-size:12px;
+}
+ul.social-icons li{
+    display: inline-block;
+	padding-left:10px;
+}
+ul.social-icons li a, .phone-number div {
+    border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;	
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	display: inline-block;
+	height: 26px;
+	width: 26px;
+	text-align: center;
+	color: #09353e;
+	background-color: #e0e4cc;
+}
+
+ul.social-icons li a:hover {
+	text-decoration: none;
+}
+ul.social-icons li a i.fa, ul.social-icons li div i.fa {
+	font-style: 16px;
+	position: relative;
+	top: 4px;
+}
+ul.social-icons li a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+ul.social-icons li.facebook a:hover {
+	background-color: #3a5897;	
+}
+ul.social-icons li.twitter a:hover {
+	background-color: #00bdec;	
+}
+ul.social-icons li.linkedin a:hover {
+	background-color: #1a92bd;
+}
+ul.social-icons li.google-plus a:hover {
+	background-color: #dd4b39;
+}
+.phone-number div {
+    background-color:#69d2e7;
+	color:#fff;
+}
+.phone-number{
+    font-style: 13px;
+	font-weight: bold;
+	color: #09353e;
+	padding-left: 20px;
+	display: inline-block;
+	line-height: 26px;
+	float: right;
+}
+.phone-number div{
+	margin-right: 8px;
+}
+.phone-number span{
+    font-style: 13px;
+	font-weight: bold;
+	color: #09353e;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

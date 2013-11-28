@@ -1,0 +1,247 @@
+/* Add here all your CSS customizations */
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: 0;
+  border-top: 1px solid #eceee1;
+}
+
+@media (max-width: 767px) {
+  .color-line {
+	padding: 0 10px;
+    text-align: center;
+  }
+  h1.logo {
+	margin-top: 5px;
+    text-align: center;	
+  }
+  h1.logo a{
+    display: inline-block; 
+  }
+  h1.logo div {
+    display: block;
+    padding: 4px 0;
+	margin-left: 0;
+	border-left: 0;
+	-webkit-transform: skew(0);
+	-ms-transform: skew(0);
+	transform: skew(0);
+  }
+  h1.logo div span {
+    display: inline-block;
+    -webkit-transform: skew(0);
+	-ms-transform: skew(0);
+	transform: skew(0);
+  }
+  .search-content {
+    right: 25px;
+  }
+  .social-icons-content{
+    padding-right: 15px;
+  }
+}
+@media (min-width: 991px) {
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+	padding: 0;
+  }
+  .navbar-toggle {
+    display: none;
+  }  
+  .nav > li {
+    float: left;
+  }  
+}
+@media (max-width: 991px) {
+   .intro-text {
+    text-align: center; 
+	padding-bottom:10px;
+   }
+   .intro {   
+    padding: 10px 0 20px 0; 
+   }
+}
+
+/* -------------------- Custom Collapsed Menu --------------- */
+
+@media (min-width: 991px) {
+  .dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  }
+}
+
+@media (max-width: 991px) {
+   header {
+	border-bottom: 1px solid #e7ead7;
+  }
+  .navbar {
+    background-color: #f5f7ef;	
+  }
+  .navbar-nav {
+    margin: 0 -15px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .dropdown:hover {
+    border-top: 1px solid #e7ead7;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding: 13px;
+  }
+  .navbar-nav li  {
+    border-top: 1px solid #e7ead7;
+	margin-top: 0;
+  }  
+  .dropdown > a {
+    border-left: none;
+    border-right: none;	
+  }
+  .dropdown:hover > a {
+    border-left: none;
+    border-right: none;	
+  }
+  .dropdown-submenu > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+  }   
+  .dropdown-menu {
+    display: none;
+  }
+  .navbar-nav > li:hover {
+    border-top: 1px solid #E7EAD7 !important;
+  } 	
+  .navbar-nav li a:hover {
+    background-color: #fa6900;
+	color:#fff;
+  } 
+  .open .dropdown-menu {
+    display: block;
+  }  
+  .dropdown-submenu > a:after {
+    visibility: hidden;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 13px 15px 13px 35px;
+  }
+  .navbar-nav .open .dropdown-menu .dropdown-submenu  li a {
+    padding: 13px 15px 13px 50px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  } 
+  .navbar-nav .dropdown .dropdown-menu a:hover {
+	padding: 13px 15px 13px 35px;
+  }
+  .navbar-nav .dropdown .dropdown-menu a {    
+	border-bottom: none;
+  } 
+  .carousel-indicators li, .carousel-indicators .active {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 767px) {
+  .right-sidebar, .left-sidebar {
+   padding: 0 0 30px 0;
+}
+  .navbar-nav {
+    margin: 0;
+  }
+  .scrollup{
+    display: none !important;
+  }
+  .scrollup-1 {
+    display: block; 
+  }
+  .search-content{
+    right: 80px;
+  }
+  .copyright-text {
+    padding:10px 0 20px 0;
+	text-align: center;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .row {
+    margin: 0;
+  }
+  .recent-box {
+    text-align: center;
+  }  
+  .recent-box a {
+    max-width: 500px;
+	display: block;
+	margin: 0 auto;
+  }
+  .sidebar .recent-box a {
+    max-height: 200px;
+  }
+  .sidebar .recent-box a div {
+	left: 45%;
+	top: 45%;
+  }
+  .footer-twitter{
+    clear: both;
+  }
+  .panel-body i {
+    font-size: 60px;
+	margin-left: 0;
+  }
+  body.boxed .container  {
+	padding: 0 15px;
+  }
+  .tabs-article .tab-content {
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .panel-body i {
+    font-size: 40px;
+	margin-left: 0;
+  } 
+  .container {
+    padding: 0 10px;
+  }
+  .tabs-article ul li a i {
+    display: none;
+  }
+  .tabs-article ul li a {
+    font-size: 11px; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

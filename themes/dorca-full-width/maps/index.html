@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+<title>Dorca Map</title> 
+<body>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(51.522416,-0.175781);
+	
+    var markers = [
+            {
+                "title": 'MABITTO Ltd. - London',
+                "lat": '51.49632',
+                "lng": '-0.082784',
+                "description": '<p class="address-text"><b>DORCA - London</b><br/>Tower Bridge Road<br/>United Kingdom</p>'
+            }
+    ];
+    window.onload = function () {
+        var mapOptions = {
+            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+            zoom: 8,
+			maxZoom: 13,
+			minZoom: 5,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var infoWindow = new google.maps.InfoWindow();
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        var i = 0;
+        var interval = setInterval(function () {
+            var data = markers[i]
+            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: data.title,
+                animation: google.maps.Animation.DROP
+            });
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    infoWindow.setContent(data.description);
+                    infoWindow.open(map, marker);
+                });
+            })(marker, data);
+            i++;
+            if (i == markers.length) {
+                clearInterval(interval);
+            }
+        }, 400);
+    }
+</script>
+
+  <div id="map_canvas" style="width: 100%; height: 450px;"></div> 
+</body> 
+
+</html>
